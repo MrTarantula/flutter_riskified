@@ -10,7 +10,7 @@ class FlutterRiskified {
       const MethodChannel('flutter_riskified');
 
   ///
-  /// Entry point, should be called in [main].
+  /// Entry point, should be called in main() method.
   ///
   static Future<void> startBeacon(String shopName, String token,
           {bool debugInfo = false}) async =>
