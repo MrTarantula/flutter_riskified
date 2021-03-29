@@ -1,0 +1,29 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_riskified (0.0.1):
+    - Flutter
+    - RiskifiedBeacon (~> 1.2.7)
+  - RiskifiedBeacon (1.2.7)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_riskified (from `.symlinks/plugins/flutter_riskified/ios`)
+
+SPEC REPOS:
+  trunk:
+    - RiskifiedBeacon
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_riskified:
+    :path: ".symlinks/plugins/flutter_riskified/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_riskified: 76c31916febc230605f7213a90ebbe5a20293ce9
+  RiskifiedBeacon: f8b68b96716408b694a697b6c223c88eafae4d32
+
+PODFILE CHECKSUM: 1d62be80675f50e63eb2f851d55ee75f09951c1b
+
+COCOAPODS: 1.10.1
