@@ -71,6 +71,7 @@ class FlutterRiskifiedPlugin : FlutterPlugin, MethodCallHandler {
             }
             "removeLocationUpdates" -> {
                 beacon.removeLocationUpdates()
+                result.success(null)
             }
             "riskifiedDeviceId" -> {
                 val rCookie = beacon.rCookie()

@@ -31,34 +31,33 @@ class _MyAppState extends State<MyApp> {
               ElevatedButton(
                   child: Text("Start Beacon"),
                   onPressed: () async {
-                    await FlutterRiskified.startBeacon("test", "test",
+                    await Riskified.startBeacon("test", "test",
                         debugInfo: true);
                     _updateText('Beacon started!');
                   }),
               ElevatedButton(
                   child: Text("Log Request"),
                   onPressed: () async {
-                    await FlutterRiskified.logRequest(
-                        "https://www.test.com/test");
+                    await Riskified.logRequest("https://www.test.com/test");
                     _updateText('Request logged!');
                   }),
               ElevatedButton(
                   child: Text("Update Session Token"),
                   onPressed: () async {
-                    await FlutterRiskified.updateSessionToken("abcdefg");
+                    await Riskified.updateSessionToken("abcdefg");
                     _updateText('Session token updated!');
                   }),
               ElevatedButton(
                   child: Text("Log Sensitive Device Info"),
                   onPressed: () async {
-                    await FlutterRiskified.logSensitiveDeviceInfo();
+                    await Riskified.logSensitiveDeviceInfo();
                     _updateText('Sensitive device info logged!');
                   }),
               ElevatedButton(
                   child: Text("Device ID"),
                   onPressed: () async {
                     _updateText(
-                        'Device ID: ${await FlutterRiskified.riskifiedDeviceId}');
+                        'Device ID: ${await Riskified.riskifiedDeviceId}');
                   }),
               Text(_text)
             ]),

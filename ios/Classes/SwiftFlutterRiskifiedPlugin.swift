@@ -18,27 +18,27 @@ public class SwiftFlutterRiskifiedPlugin: NSObject, FlutterPlugin {
                 let token: String = myArgs["token"] as? String,
                 let debugInfo = myArgs["debugInfo"] as? Bool {
                 RiskifiedBeacon.start(shopName, sessionToken: token,debugInfo: debugInfo)
-                result("OK")
+                result(nil)
             } else {
                 result(FlutterError(code: "invalidArgs", message: "Shop name and token cannot be null or empty", details: nil))
             }
         } else if (call.method == "updateSessionToken") {
             if let token = call.arguments as? String {
                 RiskifiedBeacon.updateSessionToken(token)
-                result("OK")
+                result(nil)
             } else {
                 result(FlutterError(code: "invalidArgs", message: "Token cannot be null or empty", details: nil))
             }
         } else if (call.method == "logRequest") {
             if let url = call.arguments as? String {
                 RiskifiedBeacon.logRequest(URL(string: url))
-                result("OK")
+                result(nil)
             } else {
                 result(FlutterError(code: "invalidArgs", message: "URL cannot be null or empty", details: nil))
             }
         } else if (call.method == "logSensitiveDeviceInfo") {
             RiskifiedBeacon.logSensitiveDeviceInfo()
-            result("OK")
+            result(nil)
         } else if (call.method == "riskifiedDeviceId") {
             result(RiskifiedBeacon.rCookie())
         } else {

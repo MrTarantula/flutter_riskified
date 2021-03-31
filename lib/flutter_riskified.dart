@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 ///
 /// Riskified Plugin
 ///
-class FlutterRiskified {
+class Riskified {
   static const MethodChannel _channel =
       const MethodChannel('flutter_riskified');
 

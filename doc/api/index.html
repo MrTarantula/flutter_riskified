@@ -25,7 +25,7 @@
 <header id="title">
   <button id="sidenav-left-toggle" type="button">&nbsp;</button>
   <ol class="breadcrumbs gt-separated dark hidden-xs">
-    <li><a href="https://github.com/mrtarantula/flutter_riskified.git">flutter_riskified package</a></li>
+    <li><a href="https://pub.dev/packages/flutter_riskified">flutter_riskified package</a></li>
   </ol>
   <div class="self-name">flutter_riskified</div>
   <form class="search navbar-right" role="search">
@@ -43,7 +43,7 @@
     </header>
     
     <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
-      <li><a href="https://github.com/mrtarantula/flutter_riskified.git">flutter_riskified package</a></li>
+      <li><a href="https://pub.dev/packages/flutter_riskified">flutter_riskified package</a></li>
     </ol>
     
     <h5 class="hidden-xs"><span class="package-name">flutter_riskified</span> <span class="package-kind">package</span></h5>
@@ -56,15 +56,21 @@
   <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
       <section class="desc markdown">
         <h1 id="flutter_riskified">flutter_riskified</h1>
-<p>A new flutter plugin project.</p>
-<h2 id="getting-started">Getting Started</h2>
-<p>This project is a starting point for a Flutter
-<a href="https://flutter.dev/developing-packages/">plug-in package</a>,
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.</p>
-<p>For help getting started with Flutter, view our
-<a href="https://flutter.dev/docs">online documentation</a>, which offers tutorials,
-samples, guidance on mobile development, and a full API reference.</p>
+<blockquote>
+<p>CURRENTLY UNSTABLE! Use at your own risk!</p>
+</blockquote>
+<p>Riskified beacon plugin for Flutter. Currently supports iOS and Android (Swift and Kotlin).</p>
+<h2 id="usage">Usage</h2>
+<p>Start the beacon in your <code>main</code> method, before <code>runApp</code>:</p>
+<pre class="language-dart"><code class="language-dart">import 'package:flutter_riskified/flutter_riskified.dart';
+...
+main() async {
+    await Riskified.startBeacon("&lt;SHOP_NAME&gt;", "&lt;SESSION_TOKEN&gt;");
+    ...
+    runApp(MyApp());
+}
+</code></pre>
+<p>For more, check out the example or view the <a href="https://pub.dev/documentation/flutter_riskified/latest">docs</a>.</p>
       </section>
       
         <section class="summary">
@@ -89,7 +95,7 @@ samples, guidance on mobile development, and a full API reference.</p>
 <footer>
   <span class="no-break">
     flutter_riskified
-      0.1.0
+      0.1.0-pre
   </span>
 
 </footer>

@@ -1,15 +1,21 @@
 # flutter_riskified
 
-A new flutter plugin project.
+> CURRENTLY UNSTABLE! Use at your own risk!
 
-## Getting Started
+Riskified beacon plugin for Flutter. Currently supports iOS and Android (Swift and Kotlin).
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+## Usage
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Start the beacon in your `main` method, before `runApp`:
 
+```dart
+import 'package:flutter_riskified/flutter_riskified.dart';
+...
+main() async {
+    await Riskified.startBeacon("<SHOP_NAME>", "<SESSION_TOKEN>");
+    ...
+    runApp(MyApp());
+}
+```
+
+For more, check out the example or view the [docs](https://pub.dev/documentation/flutter_riskified/latest).

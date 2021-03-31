@@ -1,8 +1,7 @@
 name: flutter_riskified
 description: A new flutter plugin project.
-version: 0.1.0
-author:
-homepage: https://github.com/mrtarantula/flutter_riskified.git
+version: 0.1.0-pre
+homepage: https://pub.dev/packages/flutter_riskified
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
