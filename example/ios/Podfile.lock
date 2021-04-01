@@ -1,6 +1,6 @@
 PODS:
   - Flutter (1.0.0)
-  - flutter_riskified (0.0.1):
+  - flutter_riskified (0.2.0-pre):
     - Flutter
     - RiskifiedBeacon (~> 1.2.7)
   - RiskifiedBeacon (1.2.7)
@@ -21,9 +21,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  flutter_riskified: 76c31916febc230605f7213a90ebbe5a20293ce9
+  flutter_riskified: 46c32feab08745eea9c75c2cacfb30465875286b
   RiskifiedBeacon: f8b68b96716408b694a697b6c223c88eafae4d32
 
-PODFILE CHECKSUM: 1d62be80675f50e63eb2f851d55ee75f09951c1b
+PODFILE CHECKSUM: 8e679eca47255a8ca8067c4c67aab20e64cb974d
 
 COCOAPODS: 1.10.1

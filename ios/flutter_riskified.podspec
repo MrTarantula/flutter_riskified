@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'flutter_riskified'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0-pre'
   s.summary          = 'Riskified plugin for Flutter.'
   s.description      = <<-DESC
 Riskified plugin for Flutter.

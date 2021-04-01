@@ -2,7 +2,7 @@
 
 > CURRENTLY UNSTABLE! Use at your own risk!
 
-Riskified beacon plugin for Flutter. Currently supports iOS and Android (Swift and Kotlin).
+[Riskified beacon](https://support.riskified.com/hc/en-us/articles/360018066754-Mobile-SDKs-for-Native-Apps) plugin for Flutter. Currently supports iOS and Android (Swift and Kotlin).
 
 ## Usage
 
