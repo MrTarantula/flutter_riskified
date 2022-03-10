@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.version          = '0.3.0-pre'
   s.summary          = 'Riskified plugin for Flutter.'
   s.description      = <<-DESC
-Riskified plugin for Flutter.
+                        Riskified plugin for Flutter.
                        DESC
   s.homepage         = 'https://github.com/MrTarantula/flutter_risified'
   s.license          = { :file => '../LICENSE' }
@@ -22,6 +22,4 @@ Riskified plugin for Flutter.
   # Flutter.framework does not contain a i386 slice.
   # s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
 
-   s.static_framework = true
-  s.dependency 'RiskifiedBeacon', '~> 1.2.7'
 end
