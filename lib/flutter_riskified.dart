@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 
 import 'package:flutter/services.dart';
 
@@ -32,8 +33,11 @@ class Riskified {
   ///
   /// Manually log sensitive Personally Identifiable Information (social account data).
   ///
-  static Future<void> logSensitiveDeviceInfo() async =>
+  static Future<void> logSensitiveDeviceInfo() async {
+    if (Platform.isIOS) {
       await _channel.invokeMethod("logSensitiveDeviceInfo");
+    }
+  }
 
   ///
   /// Get the unique Riskified Identifier.

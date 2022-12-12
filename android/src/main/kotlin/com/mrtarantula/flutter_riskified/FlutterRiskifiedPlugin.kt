@@ -65,10 +65,10 @@ class FlutterRiskifiedPlugin : FlutterPlugin, MethodCallHandler {
                     result.success(null)
                 }
             }
-            "logSensitiveDeviceInfo" -> {
-                beacon.logSensitiveDeviceInfo()
-                result.success(null)
-            }
+//            "logSensitiveDeviceInfo" -> {
+//                beacon.logSensitiveDeviceInfo()
+//                result.success(null)
+//            }
             "removeLocationUpdates" -> {
                 beacon.removeLocationUpdates()
                 result.success(null)
