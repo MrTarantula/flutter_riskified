@@ -69,10 +69,10 @@ class FlutterRiskifiedPlugin : FlutterPlugin, MethodCallHandler {
 //                beacon.logSensitiveDeviceInfo()
 //                result.success(null)
 //            }
-            "removeLocationUpdates" -> {
-                beacon.removeLocationUpdates()
-                result.success(null)
-            }
+//            "removeLocationUpdates" -> {
+//                beacon.removeLocationUpdates()
+//                result.success(null)
+//            }
             "riskifiedDeviceId" -> {
                 val rCookie = beacon.rCookie()
                 result.success(rCookie)
@@ -85,6 +85,6 @@ class FlutterRiskifiedPlugin : FlutterPlugin, MethodCallHandler {
 
     override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
         channel.setMethodCallHandler(null)
-        beacon.removeLocationUpdates()
+//        beacon.removeLocationUpdates()
     }
 }
